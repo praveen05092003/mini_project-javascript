@@ -1,0 +1,18 @@
+.container{
+   border: 2px solid red;
+   background-color: aquamarine;
+   margin: 50px,50px;
+}
+
+
+div{
+    justify-content: center;
+    text-align: center;
+    color: orange;
+    margin: 50px,50px;
+    border-color: black;
+}
+#increment-btn{
+    color: brown;
+    background: yellow;
+}
