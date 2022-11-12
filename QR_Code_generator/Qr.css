@@ -18,7 +18,11 @@ body{
     max-width: 410px;
     background: #fff;
     border-radius: 7px;
-    padding: 16px 25px;
+    padding: 16px 25px 0;
+    transition: height 0.2s ease;
+}
+.Qr.active{
+    height: 530px;
 }
 header h1{
     font-size:21px;
@@ -30,7 +34,7 @@ header p{
     font-size: 16px;
 }
 .Qr .form{
-    margin: 20px 0 30px;
+    margin: 20px 0 25px;
 }
 .form :where(input,button){
     width:100%;
@@ -54,8 +58,14 @@ header p{
     display: flex;
     opacity: 0;
     pointer-events: none;
-    padding: 33px 0;
+    padding: 39px 0;
+    border-radius:5px;
     align-items: center;
     justify-content: center;
     border: 1px solid #ccc;
+}
+.Qr.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
 }
